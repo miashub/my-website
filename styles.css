@@ -1,0 +1,143 @@
+/* Base Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff7e5f;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+nav a {
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background: #ff7e5f;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+button {
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e56a50;
+}
+
+.featured {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.photo-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-5px);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.newsletter {
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+input[type="email"] {
+    padding: 0.8rem;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+#last-updated {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Photography</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Golden Hour Photography</h1>
+        <p>Capturing nature's most beautiful moments</p>
+    </header>
+    
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Beautiful Sunset Collection</h2>
+                <p>Explore our stunning photography from around the world</p>
+                <button id="view-gallery">View Gallery</button>
+            </div>
+        </section>
+        
+        <section class="featured">
+            <h2>Featured Photos</h2>
+            <div class="photo-grid" id="photo-container">
+                <!-- Photos will be loaded by JavaScript -->
+            </div>
+        </section>
+        
+        <section class="newsletter">
+            <h3>Join Our Newsletter</h3>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Golden Hour Photography. All rights reserved.</p>
+        <p id="last-updated"></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
